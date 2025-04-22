@@ -14,6 +14,6 @@ export const aboutMeData = [
   },
   {
     id: 3,
-    bio: `I hold a BSC in Electronic Computer Technology from the prestigious University of Calabar, a Microsoft Azure AI Fundamentals and Azure AI Engineer Associate Certificates. I am currently pursuing further certifications in Microsoft AI Solutions Expert, demonstrating my commitment to continuous learning. Beyond my professional pursuits, I believe in maintaining a balanced lifestyle. I enjoys exercising my body to stay physically fit and reading to exercise my mind, I constantly seek new knowledge and perspectives.`
+    bio: `I hold a Microsoft Azure AI Fundamentals and Azure AI Engineer Associate Certificates. I am currently pursuing further certifications in Microsoft AI Solutions Expert, demonstrating my commitment to continuous learning. Beyond my professional pursuits, I believe in maintaining a balanced lifestyle. I enjoys exercising my body to stay physically fit and reading to exercise my mind, I constantly seek new knowledge and perspectives.`
   }
 ];

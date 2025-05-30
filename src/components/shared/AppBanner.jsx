@@ -56,7 +56,7 @@ const AppBanner = () => {
             delaySpeed={1000}
           />
         </motion.p>
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{
@@ -77,7 +77,7 @@ const AppBanner = () => {
               Download CV
             </span>
           </a>
-        </motion.div>
+        </motion.div> */}
       </div>
     </motion.section>
   );

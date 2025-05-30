@@ -18,11 +18,11 @@ const socialLinks = [
     icon: <FiGithub />,
     url: "https://github.com/Bernardiho10",
   },
-  {
-    id: 3,
-    icon: <FiTwitter />,
-    url: "https://twitter.com/Bernard_iho",
-  },
+  // {
+  //   id: 3,
+  //   icon: <FiTwitter />,
+  //   url: "https://twitter.com/Bernard_iho",
+  // },
   {
     id: 4,
     icon: <FiLinkedin />,

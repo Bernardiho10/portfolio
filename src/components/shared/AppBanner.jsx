@@ -34,7 +34,7 @@ const AppBanner = () => {
           }}
           className="font-general-semibold mt-6 text-3xl lg:text-3xl xl:text-4xl text-center text-ternary-dark dark:text-primary-light uppercase"
         >
-          Bernard Oko
+          Bernard Ariku Oko
         </motion.h1>
         <motion.p
           initial={{ opacity: 0 }}

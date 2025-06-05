@@ -1,14 +1,34 @@
+import { useState } from "react";
 import Button from "../reusable/Button";
 import FormInput from "../reusable/FormInput";
+import { sendEmail } from "../../utils/emailService";
 
 const ContactForm = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const [status, setStatus] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("sending");
+
+    const success = await sendEmail(formData);
+
+    setStatus(success ? "success" : "error");
+    if (success) {
+      setFormData({ name: "", email: "", subject: "", message: "" });
+    }
+  };
+
   return (
     <div className="w-full lg:w-1/2">
       <div className="leading-loose">
         <form
-          onSubmit={(e) => {
-            e.preventDefault();
-          }}
+          onSubmit={handleSubmit}
           className="max-w-xl m-4 p-6 sm:p-10 bg-secondary-light dark:bg-secondary-dark rounded-xl shadow-xl text-left"
         >
           <p className="font-general-medium text-primary-dark dark:text-primary-light text-2xl mb-8">
@@ -22,6 +42,10 @@ const ContactForm = () => {
             inputName="name"
             placeholderText="Your Name"
             ariaLabelName="Name"
+            value={formData.name}
+            onChange={(e) =>
+              setFormData({ ...formData, name: e.target.value })
+            }
           />
           <FormInput
             inputLabel="Email"
@@ -31,6 +55,10 @@ const ContactForm = () => {
             inputName="email"
             placeholderText="Your email"
             ariaLabelName="Email"
+            value={formData.email}
+            onChange={(e) =>
+              setFormData({ ...formData, email: e.target.value })
+            }
           />
           <FormInput
             inputLabel="Subject"
@@ -40,6 +68,10 @@ const ContactForm = () => {
             inputName="subject"
             placeholderText="Subject"
             ariaLabelName="Subject"
+            value={formData.subject}
+            onChange={(e) =>
+              setFormData({ ...formData, subject: e.target.value })
+            }
           />
 
           <div className="mt-6">
@@ -56,6 +88,10 @@ const ContactForm = () => {
               cols="14"
               rows="6"
               aria-label="Message"
+              value={formData.message}
+              onChange={(e) =>
+                setFormData({ ...formData, message: e.target.value })
+              }
             ></textarea>
           </div>
 
@@ -66,6 +102,22 @@ const ContactForm = () => {
               aria-label="Send Message"
             />
           </div>
+
+          {status === "sending" && (
+            <p className="text-yellow-500 text-center mt-4">
+              Sending your message...
+            </p>
+          )}
+          {status === "success" && (
+            <p className="text-green-500 text-center mt-4">
+              Message sent successfully!
+            </p>
+          )}
+          {status === "error" && (
+            <p className="text-red-500 text-center mt-4">
+              There was an error sending your message. Please try again.
+            </p>
+          )}
         </form>
       </div>
     </div>

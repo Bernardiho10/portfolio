@@ -2,7 +2,7 @@ export const aboutMeData = [
   {
     id: 1,
     bio: `
-    I am a self-taught software developer with over 4 years of hands-on experience building scalable web applications and collaborating with diverse businesses to enhance their online presence. My journey into tech began through platforms like Treehouse, Andela, and Microsoft Learn, where I developed a strong foundation in software development and computer science principles. Specializing in full-stack development, I focus heavily on JavaScript frameworks such as React and Node.js to deliver high-quality, user-centered solutions.
+    I am a software developer with over 4 years of hands-on experience building scalable web applications and collaborating with diverse businesses to enhance their online presence. My journey into tech began through platforms like Treehouse, Andela, and Microsoft Learn, where I developed a strong foundation in software development and computer science principles. Specializing in full-stack development, I focus heavily on JavaScript frameworks such as React and Node.js to deliver high-quality, user-centered solutions.
 
 		`,
   },

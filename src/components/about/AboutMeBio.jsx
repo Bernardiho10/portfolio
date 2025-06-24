@@ -35,18 +35,18 @@ const skills = [
   {
     category: "Software Development",
     skills: [
-      { name: "Next Js", level: 2 },
-      { name: "Node JS", level: 2 },
-      { name: "Java", level: 1 },
-      { name: "Git", level: 2 },
-      { name: "My SQL", level: 2 },
-      { name: "Mongo DB", level: 2 },
-      { name: "Docker", level: 1 },
-      { name: "Restful Api's", level: 2 },
-      { name: "Python", level: 1 },
-      { name: "React Native", level: 1 },
-      { name: "Expo", level: 1 },
-      { name: "Jenkins", level: 1 },
+      { name: "Next Js", level: 4 },
+      { name: "Node JS", level: 3 },
+      { name: "Java", level: 2 },
+      { name: "Git", level: 4 },
+      { name: "My SQL", level: 3 },
+      { name: "Mongo DB", level: 3 },
+      { name: "Docker", level: 3 },
+      { name: "Restful Api's", level: 3 },
+      { name: "Python", level: 3 },
+      { name: "React Native", level: 4 },
+      { name: "Expo", level: 2 },
+      { name: "Jenkins", level: 2 },
     ]
   }
 ];

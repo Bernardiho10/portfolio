@@ -19,7 +19,8 @@
 		"react-scroll": "^1.8.4",
 		"react-simple-typewriter": "^5.0.1",
 		"styled-components": "^5.3.3",
-		"web-vitals": "^1.0.1"
+		"web-vitals": "^1.0.1",
+		"@emailjs/browser": "^3.11.0"
 	},
 	"scripts": {
 		"start": "react-scripts start",

@@ -37,7 +37,7 @@ const AppBanner = () => {
           className="font-general-medium mt-3 text-2xl md:text-2xl lg:text-2xl xl:text-3xl text-center leading-normal text-gray-500 dark:text-gray-200"
         >
           <Typewriter
-            words={['Hello, welcome to my portfolio! Be blessed']}
+            words={['Hallo, Willkommen! I am a software developer with a passion for building innovative solutions.']}
             loop={1}
             cursor
             cursorStyle='_'

@@ -22,7 +22,7 @@ const AppBanner = () => {
             duration: 0.9,
             delay: 0.1,
           }}
-          className="font-general-semibold mt-6 text-3xl lg:text-3xl xl:text-4xl text-left text-ternary-dark dark:text-primary-light uppercase"
+          className="font-general-semibold mt-6 text-3xl lg:text-3xl xl:text-4xl text-center text-ternary-dark dark:text-primary-light uppercase"
         >
           Bernard Ariku Oko
         </motion.h1>

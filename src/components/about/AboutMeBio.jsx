@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import AboutMeContext from "../../context/AboutMeContext";
+import profileImage from "../../images/ben.png";
 
 // Sample star component for skill level
 const SkillLevel = ({ level }) => {
@@ -56,8 +57,18 @@ const AboutMeBio = () => {
 
   return (
     <>
-      <div className="block sm:flex sm:gap-10 mt-10 sm:mt-20">
+      <div className="block sm:flex sm:gap-10 mt-10 sm:mt-10">
         
+        <div className="order-2 sm:order-1 w-full sm:w-2/3 text-center sm:mt-0 sm:self-start">
+        <motion.div
+          initial={{ opacity: 0, y: -180 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
+        >
+          <img src={profileImage} className="rounded-lg mx-auto" alt="Profile" />
+        </motion.div>
+      </div>
+
         <div className="font-general-regular w-full sm:w-3/4" style={{width: '100%'}}>
           {aboutMe.map((bio) => (
             <p

@@ -1,7 +1,5 @@
 import useThemeSwitcher from "../../hooks/useThemeSwitcher";
-import { FiArrowDownCircle } from "react-icons/fi";
 import { motion } from "framer-motion";
-import profileImage from "../../images/ben.png";
 import { Typewriter } from 'react-simple-typewriter';
 
 const AppBanner = () => {
@@ -14,15 +12,7 @@ const AppBanner = () => {
       transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
       className="flex flex-col sm:flex-row items-center justify-center mt-12 md:mt-2"
     >
-      <div className="order-2 sm:order-1 w-full sm:w-2/3 text-center sm:mt-0 sm:self-start">
-        <motion.div
-          initial={{ opacity: 0, y: -180 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
-        >
-          <img src={profileImage} className="rounded-lg mx-auto" alt="Profile" />
-        </motion.div>
-      </div>
+      
       <div className="order-1 sm:order-2 w-full text-center md:w-2/3">
         <motion.h1
           initial={{ opacity: 0 }}
@@ -32,7 +22,7 @@ const AppBanner = () => {
             duration: 0.9,
             delay: 0.1,
           }}
-          className="font-general-semibold mt-6 text-3xl lg:text-3xl xl:text-4xl text-center text-ternary-dark dark:text-primary-light uppercase"
+          className="font-general-semibold mt-6 text-3xl lg:text-3xl xl:text-4xl text-left text-ternary-dark dark:text-primary-light uppercase"
         >
           Bernard Ariku Oko
         </motion.h1>
@@ -44,7 +34,7 @@ const AppBanner = () => {
             duration: 0.9,
             delay: 0.2,
           }}
-          className="font-general-medium mt-3 text-2xl md:text-2xl lg:text-2xl xl:text-3xl text-center leading-normal text-gray-500 dark:text-gray-200"
+          className="font-general-medium mt-3 text-2xl md:text-2xl lg:text-2xl xl:text-3xl text-left leading-normal text-gray-500 dark:text-gray-200"
         >
           <Typewriter
             words={['Hello, welcome to my portfolio! Be blessed']}

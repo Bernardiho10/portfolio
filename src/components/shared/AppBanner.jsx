@@ -34,7 +34,7 @@ const AppBanner = () => {
             duration: 0.9,
             delay: 0.2,
           }}
-          className="font-general-medium mt-3 text-2xl md:text-2xl lg:text-2xl xl:text-3xl text-left leading-normal text-gray-500 dark:text-gray-200"
+          className="font-general-medium mt-3 text-2xl md:text-2xl lg:text-2xl xl:text-3xl text-center leading-normal text-gray-500 dark:text-gray-200"
         >
           <Typewriter
             words={['Hello, welcome to my portfolio! Be blessed']}

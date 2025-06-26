@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import AboutMeContext from "../../context/AboutMeContext";
 import profileImage from "../../images/ben.png";
+import { motion } from "framer-motion";
 
 // Sample star component for skill level
 const SkillLevel = ({ level }) => {

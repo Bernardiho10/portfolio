@@ -1,7 +1,7 @@
 import useThemeSwitcher from "../../hooks/useThemeSwitcher";
 import { FiArrowDownCircle } from "react-icons/fi";
 import { motion } from "framer-motion";
-import profileImage from "../../images/ben_removebg.png";
+import profileImage from "../../images/ben.png";
 import { Typewriter } from 'react-simple-typewriter';
 
 const AppBanner = () => {

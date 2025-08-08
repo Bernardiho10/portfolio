@@ -39,7 +39,7 @@ const skills = [
     skills: [
       { name: "Next Js", level: 3 },
       { name: "Node JS", level: 3 },
-      { name: "Java", level: 2 },
+      // { name: "Java", level: 2 },
       { name: "Git", level: 3 },
       { name: "My SQL", level: 3 },
       { name: "Postgresql", level: 2 },

@@ -43,7 +43,7 @@ const skills = [
       { name: "Git", level: 3 },
       { name: "My SQL", level: 3 },
       { name: "Postgresql", level: 2 },
-      { name: "Docker", level: 3 },
+      { name: "Docker", level: 2 },
       { name: "Restful Api's", level: 3 },
       // { name: "Python", level: 3 },
       { name: "React Native", level: 2 },

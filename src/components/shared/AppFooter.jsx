@@ -11,7 +11,7 @@ const socialLinks = [
   {
     id: 1,
     icon: <FiGlobe />,
-    url: "https://bernardarikuoko.vercel.app/",
+    url: "https://bernardarikuoko.com.ng/",
   },
   {
     id: 2,

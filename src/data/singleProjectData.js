@@ -90,7 +90,7 @@ export const singleProjectData = [
         {
           id: 1,
           details:
-            "I played a key role in the development of Bodymotions Physio Lounge's website, ensuring it effectively represents the brand and its services. The site serves as a vital platform for patient engagement, offering information about our physiotherapy services and facilitating appointment bookings. My contributions included designing user-friendly interfaces and implementing responsive design principles to enhance accessibility across devices.",
+            "Part of the team that helped developed Bodymotions Physio Lounge's website, ensuring it effectively represents the brand and its services. The site serves as a vital platform for patient engagement, offering information about our physiotherapy services and facilitating appointment bookings. My contributions included designing user-friendly interfaces and implementing responsive design principles to enhance accessibility across devices.",
         },
       ],
     },

@@ -2,14 +2,14 @@ export const aboutMeData = [
   {
     id: 1,
     bio: `
-    I am a self-taught developer with over 4 years of hands-on experience building scalable web applications and collaborating with diverse businesses to enhance their online presence. My journey into tech began through platforms like Treehouse, Andela, and Microsoft Learn, where I developed a strong foundation in software development and computer science principles. Specializing in full-stack development, I focus heavily on JavaScript frameworks such as React and Node.js to deliver high-quality, user-centered solutions.
+    I am a self-taught seasoned developer, with 3+ years experience in planning, designing and deploying web applications. I specialize in building responsive, user-friendly websites and applications using modern web technologies. My expertise includes HTML, CSS, JavaScript, React, Nextjs and Node.js, with a strong focus on creating seamless user experiences and efficient backend systems. I have a proven track record of delivering high-quality projects on time and within budget.
 
 		`,
   },
   {
     id: 2,
     bio: `
-    As a freelancer, I’ve worked across industries to design, build, and maintain web platforms that improve customer engagement and drive business growth. My experience spans working with RESTful APIs, microservices architecture, and cloud platforms like AWS and Azure.I am a lifelong learner, constantly seeking to expand my knowledge and stay updated with the latest industry trends. My goal is to leverage my skills to keep building impactful solutions that drive business success and improve user experiences.
+     Collaborating with diverse businesses to enhance their online presence. My journey into tech began through platforms like Treehouse, Andela, and Microsoft Learn, where I developed a strong foundation in software development and computer science principles. Specializing in full-stack development, I focus heavily on JavaScript frameworks such as React and Node.js to deliver high-quality, user-centered solutions.
 
     `,
   },

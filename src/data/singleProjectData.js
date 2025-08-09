@@ -4,7 +4,7 @@ export const singleProjectData = [
   {
     ProjectHeader: {
       title: "Wordpress Website",
-      publishDate: "Jan 16, 2019",
+      publishDate: "Jan 16, 2020",
       tags: "UI / Frontend",
     },
     ProjectImages: [
@@ -51,7 +51,7 @@ export const singleProjectData = [
   {
     ProjectHeader: {
       title: "Wordpress Website",
-      publishDate: "Jan 16, 2019",
+      publishDate: "Sept 16, 2021",
       tags: "UI / Frontend",
     },
     ProjectImages: [
@@ -90,7 +90,7 @@ export const singleProjectData = [
         {
           id: 1,
           details:
-            "Passionate about improving lives through physiotherapy, I am the driving force behind Bodymotions Physio Lounge. With a strong commitment to excellence, I lead a dedicated team in delivering top-tier physiotherapy services in Nigeria. Our approach blends expertise, compassion, and innovation to promote healing and well-being. At Bodymotions, we believe that movement is medicine, and we're here to make a difference, one life at a time.",
+            "I played a key role in the development of Bodymotions Physio Lounge's website, ensuring it effectively represents the brand and its services. The site serves as a vital platform for patient engagement, offering information about our physiotherapy services and facilitating appointment bookings. My contributions included designing user-friendly interfaces and implementing responsive design principles to enhance accessibility across devices.",
         },
       ],
     },
@@ -165,7 +165,7 @@ export const singleProjectData = [
         {
           id: 1,
           details:
-            "I developed a comprehensive Property Management Application, streamlining landlord-tenant interactions. This user-friendly platform empowers landlords to efficiently register properties, oversee rent collection, and manage facility maintenance. Tenants benefit from a hassle-free payment system and quick issue reporting. The application enhances communication, reduces administrative burdens, and ensures smooth operations in the property rental industry. It showcases my expertise in full-stack development and my commitment to creating solutions that simplify complex tasks and enhance user experiences.",
+            "I aided in the development of a comprehensive Property Management Application, streamlining landlord-tenant interactions. This user-friendly platform empowers landlords to efficiently register properties, oversee rent collection, and manage facility maintenance. Tenants benefit from a hassle-free payment system and quick issue reporting. The application enhances communication, reduces administrative burdens, and ensures smooth operations in the property rental industry. It showcases my expertise in full-stack development and my commitment to creating solutions that simplify complex tasks and enhance user experiences.",
         },
       ],
     },

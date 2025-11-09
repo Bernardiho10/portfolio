@@ -52,7 +52,8 @@ function isRateLimited(ip: string): boolean {
  */
 function cleanupRateLimitStore() {
   const now = Date.now();
-  for (const [ip, record] of rateLimitStore.entries()) {
+  const entries = Array.from(rateLimitStore.entries());
+  for (const [ip, record] of entries) {
     if (now > record.resetTime) {
       rateLimitStore.delete(ip);
     }

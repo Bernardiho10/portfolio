@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { Settings } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useSession } from "next-auth/react";
@@ -58,6 +58,17 @@ export function ThemeCustomizer() {
     setIsMounted(true);
   }, []);
 
+  const applyTheme = useCallback((data: typeof themeData) => {
+    // Apply CSS variables
+    if (typeof document !== "undefined") {
+      const root = document.documentElement;
+      if (data.colors) {
+        root.style.setProperty("--theme-primary", data.colors.primary);
+        root.style.setProperty("--theme-secondary", data.colors.secondary);
+      }
+    }
+  }, []);
+
   useEffect(() => {
     // Load saved theme if user is signed in
     if (session?.user) {
@@ -71,18 +82,7 @@ export function ThemeCustomizer() {
         })
         .catch(console.error);
     }
-  }, [session]);
-
-  const applyTheme = (data: typeof themeData) => {
-    // Apply CSS variables
-    if (typeof document !== "undefined") {
-      const root = document.documentElement;
-      if (data.colors) {
-        root.style.setProperty("--theme-primary", data.colors.primary);
-        root.style.setProperty("--theme-secondary", data.colors.secondary);
-      }
-    }
-  };
+  }, [session, applyTheme]);
 
   const handleSave = async () => {
     if (!session?.user) {

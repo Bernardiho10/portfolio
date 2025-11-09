@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 interface MarqueeProps {
   className?: string;
@@ -68,7 +69,16 @@ export function ReviewCard({ name, username, body, img }: ReviewCardProps) {
       )}
     >
       <div className="flex flex-row items-center gap-2">
-        <img className="rounded-full" width="32" height="32" alt="" src={img} />
+        <div className="relative w-8 h-8 rounded-full overflow-hidden">
+          <Image
+            className="rounded-full object-cover"
+            width={32}
+            height={32}
+            alt=""
+            src={img}
+            unoptimized
+          />
+        </div>
         <div className="flex flex-col">
           <figcaption className="text-sm font-medium dark:text-white">
             {name}

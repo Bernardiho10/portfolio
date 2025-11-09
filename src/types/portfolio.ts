@@ -75,3 +75,9 @@ export interface Education {
   description: string;
 }
 
+export interface Skill {
+  name: string;
+  category: 'frontend' | 'backend' | 'database' | 'devops' | 'ai' | 'other';
+  proficiency: number;
+  icon: string;
+}

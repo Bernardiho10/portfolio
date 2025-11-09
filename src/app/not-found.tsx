@@ -73,7 +73,7 @@ export default function NotFound() {
               Page Not Found
             </h2>
             <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-6">
-              Oops! Looks like you've taken a wrong turn on the journey. The page you're looking for doesn't exist or has been moved.
+              Oops! Looks like you&apos;ve taken a wrong turn on the journey. The page you&apos;re looking for doesn&apos;t exist or has been moved.
             </p>
             <div className="flex items-center justify-center gap-2 text-gray-500 dark:text-gray-500">
               <Search className="w-5 h-5" />
@@ -143,7 +143,7 @@ export default function NotFound() {
           {/* Fun Message */}
           <div className="mt-8">
             <p className="text-sm text-gray-400 dark:text-gray-600 italic">
-              "Not all who wander are lost... but this page definitely is." 🚗💨
+              &quot;Not all who wander are lost... but this page definitely is.&quot; 🚗💨
             </p>
           </div>
         </div>
@@ -151,6 +151,3 @@ export default function NotFound() {
     </div>
   );
 }
-
-
-

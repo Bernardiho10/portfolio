@@ -21,7 +21,7 @@ export default function SignInPage() {
             }}
           >
             <Button variant="outline" className="w-full" type="submit">
-              <Icons.gitHub className="mr-2 h-4 w-4" />
+              <Icons.github className="mr-2 h-4 w-4" />
               Continue with GitHub
             </Button>
           </form>

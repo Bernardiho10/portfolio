@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 export function Contact() {
   const contactRef = useRef<HTMLDivElement>(null);
-  const formRef = useRef<HTMLFormElement>(null);
+  const formRef = useRef<HTMLDivElement>(null);
   const [formData, setFormData] = useState({
     name: '',
     email: '',

@@ -77,7 +77,7 @@ export function SeedButton() {
   return (
     <div className="flex flex-col gap-2 items-center">
       <Button
-        onClick={handleSeed}
+        onClick={() => handleSeed()}
         disabled={isLoading || isMigrating}
         className="mt-4"
       >

@@ -140,15 +140,34 @@ export default async function BlogPostPage({
 
       return {
         ...comment,
-        replies,
         createdAt: comment.createdAt.toISOString(),
         updatedAt: comment.updatedAt.toISOString(),
+        replies: replies.map((reply) => ({
+          ...reply,
+          createdAt: reply.createdAt.toISOString(),
+          updatedAt: reply.updatedAt.toISOString(),
+          user: {
+            ...reply.user,
+            id: reply.user.id.toString(),
+          },
+        })),
+        user: {
+          ...comment.user,
+          id: comment.user.id.toString(),
+        },
       };
     })
   );
 
   // Get related posts (by shared tags, exclude current)
-  let relatedArticles = [];
+  let relatedArticles: Array<{
+    id: number;
+    title: string;
+    slug: string;
+    excerpt: string;
+    heroImage: string | null;
+    tags: string[] | null;
+  }> = [];
   if (article.tags && article.tags.length > 0) {
     try {
       relatedArticles = await db
@@ -158,6 +177,7 @@ export default async function BlogPostPage({
           slug: articles.slug,
           excerpt: articles.excerpt,
           heroImage: articles.heroImage,
+          tags: articles.tags,
         })
         .from(articles)
         .where(ne(articles.id, article.id))
@@ -177,6 +197,7 @@ export default async function BlogPostPage({
             slug: articles.slug,
             excerpt: articles.excerpt,
             heroImage: articles.heroImage,
+            tags: articles.tags,
           })
           .from(articles)
           .where(ne(articles.id, article.id))

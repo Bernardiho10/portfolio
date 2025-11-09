@@ -14,7 +14,18 @@ const BLUR_FADE_DELAY = 0.04;
 
 export default async function BlogPage() {
   // Fetch initial articles server-side
-  let initialArticles = [];
+  let initialArticles: Array<{
+    id: number;
+    title: string;
+    slug: string;
+    excerpt: string;
+    heroImage: string | null;
+    publishDate: Date;
+    tags: string[] | null;
+    views: number;
+    readingTime: number;
+    upvoteCount: number;
+  }> = [];
   let needsMigration = false;
   let allCategories: string[] = [];
   

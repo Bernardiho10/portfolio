@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useMemo } from "react";
+import { useEffect, useState, useMemo, useCallback } from "react";
 import { useInView } from "react-intersection-observer";
 import { ArticleCard } from "./ArticleCard";
 import { ArticleCardSkeleton } from "./ArticleCardSkeleton";
@@ -63,21 +63,16 @@ export function ArticleFeed({
     }
   }, [initialArticles]);
 
-  useEffect(() => {
-    if (inView && hasMore && !loading) {
-      loadMoreArticles();
-    }
-  }, [inView, hasMore, loading]);
-
-  const loadMoreArticles = async () => {
+  const loadMoreArticles = useCallback(async () => {
     setLoading(true);
     try {
-      const response = await fetch(`/api/articles?page=${page + 1}&limit=10`);
+      const nextPage = page + 1;
+      const response = await fetch(`/api/articles?page=${nextPage}&limit=10`);
       const data = await response.json();
 
       if (data.articles && data.articles.length > 0) {
         setAllArticles((prev) => [...prev, ...data.articles]);
-        setPage((prev) => prev + 1);
+        setPage(nextPage);
         setHasMore(data.pagination.page < data.pagination.totalPages);
       } else {
         setHasMore(false);
@@ -88,7 +83,13 @@ export function ArticleFeed({
     } finally {
       setLoading(false);
     }
-  };
+  }, [page]);
+
+  useEffect(() => {
+    if (inView && hasMore && !loading) {
+      loadMoreArticles();
+    }
+  }, [inView, hasMore, loading, loadMoreArticles]);
 
   if (articles.length === 0 && !loading) {
     return (

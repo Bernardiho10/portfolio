@@ -48,7 +48,9 @@ function isRateLimited(ip: string): boolean {
 }
 
 /**
- * Clean up old rate limit entries (run periodically)
+ * Clean up old rate limit entries (run on-demand)
+ * Note: In serverless environments (like Vercel), we can't use setInterval
+ * So we clean up during each request instead
  */
 function cleanupRateLimitStore() {
   const now = Date.now();
@@ -58,11 +60,6 @@ function cleanupRateLimitStore() {
       rateLimitStore.delete(ip);
     }
   }
-}
-
-// Clean up every 30 minutes
-if (typeof setInterval !== 'undefined') {
-  setInterval(cleanupRateLimitStore, 30 * 60 * 1000);
 }
 
 /**
@@ -141,6 +138,13 @@ function validateContactData(data: any): { valid: boolean; error?: string; clean
 
 export async function POST(request: NextRequest) {
   try {
+    // Clean up old rate limit entries periodically (on each request)
+    // This prevents memory leaks in serverless environments
+    // Only clean up every 100 requests to avoid performance overhead
+    if (Math.random() < 0.01) {
+      cleanupRateLimitStore();
+    }
+
     // Get client IP for rate limiting
     const clientIP = getClientIP(request);
 

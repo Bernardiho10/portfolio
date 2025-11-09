@@ -1,6 +1,19 @@
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// Lazy initialization of Resend client to avoid build-time errors
+// The client will only be created when actually needed (at runtime)
+let resend: Resend | null = null;
+
+function getResendClient(): Resend {
+  if (!resend) {
+    const apiKey = process.env.RESEND_API_KEY;
+    if (!apiKey) {
+      throw new Error('RESEND_API_KEY environment variable is not set');
+    }
+    resend = new Resend(apiKey);
+  }
+  return resend;
+}
 
 // Use your verified domain email. If FROM_EMAIL is not set, default to your domain
 // IMPORTANT: You must use an email from your verified domain (bernardarikuoko.com.ng)
@@ -112,8 +125,11 @@ export async function sendContactEmail(data: ContactFormData): Promise<{ success
       return { success: false, error: 'Invalid email address' };
     }
 
+    // Get Resend client (lazy initialization)
+    const resendClient = getResendClient();
+
     // Send email
-    const result = await resend.emails.send({
+    const result = await resendClient.emails.send({
       from: FROM_EMAIL,
       to: TO_EMAIL,
       replyTo: data.email,

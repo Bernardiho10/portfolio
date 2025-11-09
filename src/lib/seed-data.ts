@@ -534,5 +534,76 @@ The journey from Calabar circuits to AI ethics has been long, but it's just begi
     views: 0,
     readingTime: 18,
   },
+  {
+    title: "2025: Empowering Nigeria's Elders – The 35th UNIDOP and Its Call for Intergenerational Action",
+    slug: "empowering-nigerias-elders-35th-unidop-2025",
+    excerpt: "A spotlight on Abuja's commemoration of the 35th United Nations International Day of Older Persons and the global shift toward inclusive aging.",
+    body: `# 2025: Empowering Nigeria's Elders – The 35th UNIDOP and Its Call for Intergenerational Action
+
+A Spotlight on Abuja's Commemoration and the Global Shift Toward Inclusive Aging
+
+On October 1, 2025, as the world marked the 35th anniversary of the United Nations International Day of Older Persons (UNIDOP), Abuja became a beacon of advocacy for Nigeria's aging population. Organized by the Global Knights Foundation (GKF), a non-profit dedicated to the care and protection of vulnerable groups, the event at Suite 004, Sticks and Stones Plaza in Wuse 2, drew together seniors, policymakers, and young advocates to unpack the theme: "Older Persons Driving Local and Global Actions: Our Aspirations, Our Well-Being, Our Rights." This gathering wasn't just a ceremony; it was a bold declaration that elders are not relics of the past but vital architects of Nigeria's future, harnessing their wisdom amid economic strains and demographic shifts.
+
+## The Evolution of UNIDOP
+
+The UNIDOP, established in 1991 following the 1982 Vienna World Assembly on Ageing, has evolved into a platform for addressing the global surge in older populations—from 541 million in 1995 to 1.2 billion in 2025, projected to double by 2050. In Nigeria, where elders number in the millions and are expected to triple by mid-century, the day underscores urgent local realities: healthcare inaccessibility, pension shortfalls, and social isolation in urbanizing families.
+
+GKF's commemoration, flagged off at midday, centered on these through a keynote by Dr. Musa Bawa ABG—a mentalist, wellness coach, and naturopath—who explored mental resilience as a cornerstone of elder empowerment. This was followed by a dynamic panel featuring voices like Fred Ohwahwa, President of Just Friends Club of Nigeria; Dr. Hajara Njidda Amoni from the Made in Nigeria Project Office; Umma Umar Mohammed of NTA; Prince Emeka Kalu, RATTAWU National President; and Dr. Ufuoma Omo-Obi, a global health expert. Their discussions bridged generational divides, with Gen Z participants sharing stories of collaborative community projects, echoing the theme's push for elders as "drivers" in peace-building and sustainable development.
+
+## Our Aspirations: Reframing Aging as an Asset
+
+At its core, the 2025 theme reframes aging as an asset, not a burden. "Our Aspirations" challenges ageist stereotypes by spotlighting elders' pursuits—like bridging the digital divide through tailored literacy programs or launching "encore careers" in agriculture and mentorship, leveraging Nigeria's diversification push. In a nation advancing under the National Digital Economy Policy, this means equipping seniors with tools for e-health access and financial apps, countering the 40% rural broadband gap.
+
+The event showcased real examples of this transformation: retirees mentoring youth in civic tech, fostering intergenerational equity, and creating pathways for elders to contribute their expertise to Nigeria's digital transformation.
+
+## Our Well-Being: Holistic Support for Aging
+
+"Our Well-Being" demands holistic support: affordable, age-friendly healthcare amid naira volatility; community hubs to combat urban loneliness; and robust pensions for informal workers, who form Nigeria's workforce majority. UN Resident Coordinator Mohamed Malick Fall reinforced this, stating, "peace is a prerequisite for human well-being," linking elder-led conflict resolution to broader human rights.
+
+The discussions highlighted the urgent need for:
+
+- **Healthcare Accessibility**: Addressing the challenges of accessing quality healthcare for older persons in Nigeria
+- **Social Connectivity**: Creating community spaces to combat the isolation faced by many elders in urban environments
+- **Economic Security**: Ensuring adequate pension systems for informal workers who make up the majority of Nigeria's workforce
+- **Mental Health Support**: Recognizing mental resilience as crucial for elder empowerment and well-being
+
+## Our Rights: Anchoring Dignity and Participation
+
+Finally, "Our Rights" anchors the day in dignity—ensuring participation in forums like the upcoming National Development Plan (2026-2030), eradicating workplace ageism, and bolstering protections via the National Senior Citizens Center. The event's outcomes included calls for policy reforms, with GKF's Executive Director Ngozi John-Uyah—drawing from her recent retirement—urging stakeholders to "amplify the voices of older persons."
+
+Personal narratives from attendees highlighted triumphs, like retirees mentoring youth in civic tech, fostering intergenerational equity, and demonstrating that elders can drive progress when given the opportunity.
+
+## Digital Strategy and Intergenerational Collaboration
+
+As a digital strategist contributing behind the scenes to GKF's outreach—streamlining virtual access for remote participants—I witnessed how this event sparked tangible momentum. The integration of digital tools enabled broader participation, allowing elders and advocates from across Nigeria to engage with the event, regardless of physical location.
+
+This digital transformation is crucial for ensuring that elder advocacy and intergenerational collaboration can scale beyond physical gatherings. By leveraging technology, we can create platforms where elders' voices are amplified, their experiences shared, and their contributions recognized.
+
+## Global Echo and Local Impact
+
+Yet, its true power lies in the global echo: from UN Headquarters panels in New York to local Nigerian dialogues, UNIDOP 2025 ignited a movement for societies where elders drive progress. By investing in their aspirations, safeguarding well-being, and upholding rights, Nigeria can tap a "vast reservoir of experience" for resilient growth, as analyst Vincent Obiajulu aptly noted.
+
+This day reminds us: true development honors every generation's foundation. The 35th UNIDOP wasn't just about celebrating older persons—it was about recognizing them as drivers of change, architects of progress, and essential contributors to Nigeria's future.
+
+## The Path Forward
+
+The conversations at this event set the stage for ongoing advocacy and action. Key takeaways include:
+
+1. **Policy Reform**: Urgent need for comprehensive policies that protect and empower older persons
+2. **Digital Inclusion**: Bridging the digital divide to ensure elders can participate in the digital economy
+3. **Intergenerational Dialogue**: Creating spaces for meaningful collaboration between generations
+4. **Community Building**: Establishing support networks and community hubs for older persons
+5. **Economic Empowerment**: Ensuring financial security and economic opportunities for elders
+
+As we move forward, the challenge is to translate these discussions into concrete actions that improve the lives of Nigeria's elders while recognizing their invaluable contributions to our society.
+
+*Published: October 1, 2025*
+*Tags: #UNIDOP #ElderCare #Nigeria #Intergenerational #SocialImpact #DigitalStrategy*`,
+    heroImage: "/gfk-2025.jpg",
+    publishDate: new Date("2025-10-01"),
+    tags: ["UNIDOP", "ElderCare", "Nigeria", "Intergenerational", "SocialImpact", "DigitalStrategy"],
+    views: 0,
+    readingTime: 14,
+  },
 ];
 

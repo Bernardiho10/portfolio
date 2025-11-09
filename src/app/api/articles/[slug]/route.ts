@@ -5,6 +5,10 @@ import { sql } from "drizzle-orm";
 import { NextRequest, NextResponse } from "next/server";
 import { cookies } from "next/headers";
 
+// Force dynamic rendering since we use cookies and dynamic params
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 export async function GET(
   request: NextRequest,
   { params }: { params: { slug: string } }

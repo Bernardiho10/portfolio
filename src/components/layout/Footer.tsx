@@ -166,7 +166,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-gray-200 dark:border-gray-800 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <p className="text-sm text-gray-500 dark:text-gray-400">
-            © {currentYear} {personalInfo.name}. Built with Next.js, TypeScript & GSAP.
+            © {currentYear} {personalInfo.name}. 
           </p>
           <p className="text-sm text-gray-500 dark:text-gray-400">
             Empowering Nigeria&apos;s Tech Ecosystem 🇳🇬

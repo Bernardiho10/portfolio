@@ -1,6 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { sendContactEmail, isValidEmail, ContactFormData } from '@/lib/email';
 
+// Force dynamic rendering for API route
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 // Simple in-memory rate limiting store
 // In production, consider using Redis or a database
 const rateLimitStore = new Map<string, { count: number; resetTime: number }>();

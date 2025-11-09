@@ -4,6 +4,10 @@ import { eq, and, sql } from "drizzle-orm";
 import { auth } from "@/lib/auth";
 import { NextRequest, NextResponse } from "next/server";
 
+// Force dynamic rendering since we use auth and dynamic params
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 export async function POST(
   request: NextRequest,
   { params }: { params: { slug: string } }

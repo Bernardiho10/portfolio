@@ -130,7 +130,7 @@ export function Hero() {
 
             <div className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto lg:mx-0 opacity-0" ref={bioRef}>
               <p className="mb-3">
-                Seasoned developer with <strong>6+ years</strong> of experience in planning, designing, and deploying web applications. I specialize in building responsive, user-friendly websites using modern technologies including <strong>Next.js, React, Node.js, C#, Go, Python</strong>, and more.
+                Seasoned developer with <strong>6+ years</strong> of experience in planning, designing, and deploying web applications. I specialize in building responsive, user-friendly websites using modern technologies including <strong>Next.js, React, Node.js, Python</strong>, and more.
               </p>
               <p className="mb-3">
                 I focus on creating seamless user experiences and efficient backend systems, with a proven track record of delivering high-quality projects on time and within budget. Collaborating with diverse businesses, I enhance their online presence through full-stack development.

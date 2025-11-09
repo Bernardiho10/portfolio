@@ -4,6 +4,10 @@ import { eq } from "drizzle-orm";
 import { auth } from "@/lib/auth";
 import { NextRequest, NextResponse } from "next/server";
 
+// Force dynamic rendering since we use auth
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 export async function GET() {
   try {
     const session = await auth();

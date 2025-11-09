@@ -146,7 +146,7 @@ export function Contact() {
               Get in Touch
             </h3>
             <p className="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
-              I&apos;m always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Whether you need a healthcare SaaS, AI/ML solution, or enterprise application, let&apos;s talk!
+              I&apos;m always open to discussing new projects, creative ideas, or opportunities to be part of your vision.  let&apos;s talk!
             </p>
 
             {/* Contact Methods */}

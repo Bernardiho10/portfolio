@@ -1,6 +1,10 @@
 import { neon } from "@neondatabase/serverless";
 import { NextResponse } from "next/server";
 
+// Force dynamic rendering for migration route
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 // Helper to execute raw SQL string
 // Neon serverless requires tagged template literals
 // We construct a template literal from the SQL string

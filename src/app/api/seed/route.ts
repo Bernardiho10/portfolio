@@ -3,6 +3,10 @@ import { articles } from "@/db/schema";
 import { seedArticles } from "@/lib/seed-data";
 import { NextResponse } from "next/server";
 
+// Force dynamic rendering for seed route
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 // Helper function to check if error is "table doesn't exist"
 function isTableMissingError(error: any): boolean {
   // Check error code (PostgreSQL error code 42P01 = relation does not exist)

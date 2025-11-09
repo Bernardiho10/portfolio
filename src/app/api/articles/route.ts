@@ -3,6 +3,10 @@ import { articles, upvotes } from "@/db/schema";
 import { desc, eq, sql } from "drizzle-orm";
 import { NextRequest, NextResponse } from "next/server";
 
+// Force dynamic rendering since we use searchParams
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 export async function GET(request: NextRequest) {
   try {
     const searchParams = request.nextUrl.searchParams;

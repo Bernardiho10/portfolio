@@ -1,0 +1,29 @@
+# Build outputs
+.next/
+out/
+build/
+dist/
+
+# Dependencies
+node_modules/
+
+# Cache
+.cache/
+*.cache
+
+# Old/legacy files that don't exist
+src/components/shared/AppFooterCopyright.jsx
+src/firebase.js
+src/pages/Home.jsx
+src/pages/ProjectSingle.jsx
+
+# Export directory
+export/
+
+# Debug files
+*.log
+debug.log
+
+# Environment files
+.env*.local
+

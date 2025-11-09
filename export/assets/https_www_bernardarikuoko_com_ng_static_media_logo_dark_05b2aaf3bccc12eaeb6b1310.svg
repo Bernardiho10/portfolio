@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="100">
+  <!-- White background -->
+  <rect width="100%" height="100%" fill="transparent" />
+
+  <!-- Ash background surrounding the letter B -->
+  <rect x="15" y="5" width="70" height="75"  fill="#F4F4F4"  rx="15" ry="15"  />
+
+  <!-- Bold letter B in purple -->
+  <text x="50" y="60" font-size="60" fill="#4e5ca6" font-weight="bold" stroke="black" stroke-width="3" text-anchor="middle">B</text>
+
+  <!-- Text "Bernardiho" in dark gray -->
+  <text x="185" y="58" font-size="36" fill="#333333" font-family="Arial" font-weight="bold" text-anchor="middle">Bernardiho</text>
+</svg>

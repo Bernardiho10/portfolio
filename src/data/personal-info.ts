@@ -4,7 +4,11 @@ export const personalInfo: PersonalInfo = {
   name: 'Bernard Ariku Oko',
   title: 'Frontend Developer & Full Stack Engineer',
   tagline: 'Building Scalable Futures: From Code to Care in Nigeria\'s Tech Ecosystem',
-  bio: `Highly skilled frontend developer with 7+ years of experience building responsive web applications using JavaScript, React, and the MERN stack. Specializing in React.js and frontend development with intermediate backend skills. Proficient in PHP, Node.js, Express.js, MongoDB, and modern JavaScript frameworks. Experienced in CI/CD pipelines, Docker containerization, and cloud engineering. Proven track record of delivering high-quality projects on time while collaborating with diverse businesses. Microsoft Certified: Azure AI Fundamentals and Azure AI Engineer Associate. Committed to continuous learning and building scalable solutions for the Nigerian tech ecosystem.`,
+  bio: `Seasoned developer with 6+ years of experience in planning, designing, and deploying web applications. I specialize in building responsive, user-friendly websites and applications using modern web technologies including HTML, CSS, JavaScript, Next.js, C#, Go, Python, and Node.js. My expertise focuses on creating seamless user experiences and efficient backend systems, with a proven track record of delivering high-quality projects on time and within budget.
+
+I collaborate with diverse businesses to enhance their online presence, having developed a strong foundation through platforms like Treehouse, Andela, and Microsoft Learn. Specializing in full-stack development, I focus heavily on JavaScript frameworks such as React and Node.js to deliver high-quality, user-centered solutions.
+
+I hold Microsoft Certified: Azure AI Fundamentals and Azure AI Engineer Associate certifications, and I am currently pursuing the Microsoft Certified: AI Solutions Expert certification, demonstrating my commitment to continuous learning and growth in Artificial Intelligence. Beyond my professional pursuits, I maintain a balanced lifestyle through exercising and reading, constantly seeking new knowledge and perspectives in technology and life.`,
   location: 'Nigeria',
   email: 'bernardarikuoko@gmail.com',
   twitter: '@Bernard_iho',

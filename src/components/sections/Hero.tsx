@@ -11,6 +11,7 @@ export function Hero() {
   const titleRef = useRef<HTMLHeadingElement>(null);
   const subtitleRef = useRef<HTMLParagraphElement>(null);
   const taglineRef = useRef<HTMLParagraphElement>(null);
+  const bioRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLDivElement>(null);
   const ctaRef = useRef<HTMLDivElement>(null);
   const socialsRef = useRef<HTMLDivElement>(null);
@@ -40,6 +41,12 @@ export function Hero() {
         )
         .fromTo(
           taglineRef.current,
+          { opacity: 0, y: 20 },
+          { opacity: 1, y: 0, duration: 0.8 },
+          '-=0.4'
+        )
+        .fromTo(
+          bioRef.current,
           { opacity: 0, y: 20 },
           { opacity: 1, y: 0, duration: 0.8 },
           '-=0.4'
@@ -116,10 +123,22 @@ export function Hero() {
 
             <p
               ref={taglineRef}
-              className="text-base sm:text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto lg:mx-0 opacity-0"
+              className="text-base sm:text-lg text-gray-600 dark:text-gray-400 mb-4 max-w-2xl mx-auto lg:mx-0 opacity-0"
             >
               {personalInfo.tagline}
             </p>
+
+            <div className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto lg:mx-0 opacity-0" ref={bioRef}>
+              <p className="mb-3">
+                Seasoned developer with <strong>6+ years</strong> of experience in planning, designing, and deploying web applications. I specialize in building responsive, user-friendly websites using modern technologies including <strong>Next.js, React, Node.js, C#, Go, Python</strong>, and more.
+              </p>
+              <p className="mb-3">
+                I focus on creating seamless user experiences and efficient backend systems, with a proven track record of delivering high-quality projects on time and within budget. Collaborating with diverse businesses, I enhance their online presence through full-stack development.
+              </p>
+              <p>
+                <strong>Microsoft Certified:</strong> Azure AI Fundamentals & Azure AI Engineer Associate | Currently pursuing AI Solutions Expert certification. Committed to continuous learning and growth in technology.
+              </p>
+            </div>
 
             {/* CTA Buttons */}
             <div ref={ctaRef} className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8 opacity-0">

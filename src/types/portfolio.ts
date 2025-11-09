@@ -53,3 +53,25 @@ export interface Project {
   };
 }
 
+export interface PersonalInfo {
+  name: string;
+  title: string;
+  tagline: string;
+  bio: string;
+  location: string;
+  email: string;
+  twitter: string;
+  linkedin: string;
+  github: string;
+  calendly?: string;
+  profileImage?: string;
+}
+
+export interface Education {
+  degree: string;
+  institution: string;
+  location: string;
+  year: string;
+  description: string;
+}
+

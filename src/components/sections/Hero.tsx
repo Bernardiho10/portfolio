@@ -78,7 +78,7 @@ export function Hero() {
   }, []);
 
   const scrollToJourney = () => {
-    const element = document.querySelector('#journey');
+    const element = document.querySelector('#experience');
     element?.scrollIntoView({ behavior: 'smooth' });
   };
 
@@ -196,7 +196,7 @@ export function Hero() {
         {/* Navigation Hint */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-center">
           <p className="text-sm text-gray-500 dark:text-gray-400 mb-2 animate-pulse">
-            Scroll to explore my journey
+            Scroll to explore my Experience
           </p>
           <button
             onClick={scrollToJourney}

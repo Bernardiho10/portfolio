@@ -13,6 +13,17 @@ export const projects: Project[] = [
     featured: true
   },
   {
+    id: 'drflow-practice-management',
+    title: 'Dr Flow Practice Management',
+    description: 'A comprehensive practice management application for medical practitioners. Streamline patient care, manage appointments, and optimize your medical practice workflow. Currently under development.',
+    longDescription: 'Dr Flow Practice Management is a comprehensive practice management application designed specifically for medical practitioners. The platform helps healthcare providers streamline patient care, manage appointments, handle medical records, and optimize their practice workflows. This application is currently under active development, with features being continuously added and refined to meet the needs of modern medical practices.',
+    technologies: ['Next.js', 'TypeScript', 'React', 'PostgreSQL', 'Tailwind CSS', 'Node.js'],
+    category: 'Practice Management',
+    image: '/practice.mang.bernardarikuoko.png',
+    liveUrl: 'https://practice.mang.bernardarikuoko.com.ng',
+    featured: true
+  },
+  {
     id: 'unity-nodes-mnt-magic',
     title: 'Unity Nodes - MNT Magic',
     description: 'Turn Your Minutes into MNT Magic. Farm MNT rewards effortlessly with Unity Nodes. Turn every call into crypto gains while supporting decentralized telecom infrastructure.',
@@ -36,9 +47,9 @@ export const projects: Project[] = [
   },
   {
     id: 'drflow',
-    title: 'Drflow',
-    description: 'Modern Solutions for Practice Management. Manage, streamline, and get more done with Drflow, the tool for every practitioner\'s workflow. This is a product page sample.',
-    longDescription: 'Drflow is a modern practice management solution designed to help practitioners manage, streamline, and get more done. This product page showcases the features and benefits of the platform, including workflow management, appointment scheduling, and client management tools.',
+    title: 'Drflow Product Page Sample',
+    description: 'A product page for Drflow, a practice management application. This showcases the features and benefits of the Drflow platform designed to help practitioners manage, streamline, and optimize their workflows.',
+    longDescription: 'This is a product page for Drflow, a practice management application. The page showcases the features, benefits, and value proposition of the Drflow platform, which is designed to help practitioners manage, streamline, and optimize their workflows. This project demonstrates the design and development of a marketing/product page for the application, highlighting key features such as workflow management, appointment scheduling, and client management tools. Note: This is a product page for the application, not the actual Drflow application itself.',
     technologies: ['Next.js', 'TypeScript', 'React', 'Tailwind CSS', 'PostgreSQL'],
     category: 'Practice Management',
     image: '/project4-drflowproductpagesample.png',

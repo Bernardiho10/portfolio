@@ -196,14 +196,15 @@ export function Hero() {
         {/* Navigation Hint */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-center">
           <p className="text-sm text-gray-500 dark:text-gray-400 mb-2 animate-pulse">
-            Navigation menu at bottom ↓
+            Scroll to explore my journey
           </p>
           <button
             onClick={scrollToJourney}
             className="animate-bounce"
             aria-label="Scroll down"
           >
-            <ArrowDown className="w-8 h-8 text-gray-400 dark:text-gray-600" />
+            <ArrowDown className="w-8 h-6 text-gray-400 dark:text-gray-600" aria-label="Scroll down" />
+            <ArrowDown className="w-8 h-8 text-gray-400 dark:text-gray-600" aria-label="Scroll down"  style={{ animationDelay: '0.1s' }} />
           </button>
         </div>
       </div>

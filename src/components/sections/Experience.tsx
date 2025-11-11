@@ -104,13 +104,13 @@ export function Experience() {
                       {/* Logo or Icon */}
                       <div className="flex-shrink-0">
                         {exp.logoUrl ? (
-                          <div className="w-16 h-16 rounded-xl bg-white dark:bg-gray-700 p-2 flex items-center justify-center shadow-lg border border-gray-200 dark:border-gray-600">
+                          <div className="w-16 h-16 rounded-xl bg-white dark:bg-gray-700 flex items-center justify-center shadow-lg border border-gray-200 dark:border-gray-600 overflow-hidden">
                             <Image
                               src={exp.logoUrl}
                               alt={`${exp.organization} logo`}
                               width={64}
-                              height={64}
-                              className="object-contain w-full h-full"
+                              height={74}
+                              className="w-full h-full object-contain"
                             />
                           </div>
                         ) : (

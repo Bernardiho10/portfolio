@@ -618,3 +618,77 @@ code[data-line-numbers-max-digits="3"] > [data-line]::before {
 
 /* Custom cursor for desktop only - REMOVED for better accessibility */
 /* The custom cursor was causing issues, so we'll keep default cursor */
+
+/* Animated gradient background */
+@keyframes gradient-xy {
+  0%, 100% {
+    background-position: 0% 50%;
+    opacity: 0.9;
+  }
+  50% {
+    background-position: 100% 50%;
+    opacity: 1;
+  }
+}
+
+.animate-gradient-xy {
+  background: linear-gradient(-45deg, #3b82f6, #6366f1, #f59e0b, #3b82f6);
+  background-size: 400% 400%;
+  animation: gradient-xy 8s ease infinite;
+}
+
+/* Floating bubbles animation with pop effect */
+@keyframes bubble-pop {
+  /* Appear and start floating */
+  0% {
+    transform: translate(0, 0) scale(0);
+    opacity: 0;
+  }
+  3% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.3;
+  }
+  /* Float around - varied paths */
+  15% {
+    transform: translate(20px, -30px) scale(1.05);
+    opacity: 0.4;
+  }
+  30% {
+    transform: translate(-15px, -50px) scale(0.95);
+    opacity: 0.35;
+  }
+  45% {
+    transform: translate(30px, -40px) scale(1.1);
+    opacity: 0.4;
+  }
+  60% {
+    transform: translate(-25px, -30px) scale(0.98);
+    opacity: 0.38;
+  }
+  70% {
+    transform: translate(10px, -25px) scale(1.02);
+    opacity: 0.36;
+  }
+  /* Pop effect - scale up and fade out */
+  78% {
+    transform: translate(10px, -25px) scale(1.3);
+    opacity: 0.25;
+  }
+  82% {
+    transform: translate(10px, -25px) scale(1.8);
+    opacity: 0.1;
+  }
+  85% {
+    transform: translate(10px, -25px) scale(2.2);
+    opacity: 0;
+  }
+  /* Hidden before reappearing */
+  85.1%, 100% {
+    transform: translate(0, 0) scale(0);
+    opacity: 0;
+  }
+}
+
+.animate-bubble-pop {
+  animation: bubble-pop 12s ease-in-out infinite;
+}

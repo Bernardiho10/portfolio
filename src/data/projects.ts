@@ -2,17 +2,6 @@ import { Project } from '@/types/portfolio';
 
 export const projects: Project[] = [
   {
-    id: 'mini-project',
-    title: 'Mini Project',
-    description: 'This is a mini project showcasing my technical skills.',
-    longDescription: 'A mini project demonstrating various technical skills and capabilities. This project serves as a showcase of development expertise across different technologies and frameworks.',
-    technologies: ['Next.js', 'TypeScript', 'React', 'Tailwind CSS', 'JavaScript'],
-    category: 'Portfolio',
-    image: '/project1-miniproject.png',
-    liveUrl: 'https://project1.bernardarikuoko.com.ng',
-    featured: true
-  },
-  {
     id: 'drflow-practice-management',
     title: 'Dr Flow Practice Management',
     description: 'A comprehensive practice management application for medical practitioners. Streamline patient care, manage appointments, and optimize your medical practice workflow. Currently under development.',
@@ -23,6 +12,18 @@ export const projects: Project[] = [
     liveUrl: 'https://practice.mang.bernardarikuoko.com.ng',
     featured: true
   },
+  {
+    id: 'mini-project',
+    title: 'Mini Project',
+    description: 'This is a mini project showcasing my technical skills.',
+    longDescription: 'A mini project demonstrating various technical skills and capabilities. This project serves as a showcase of development expertise across different technologies and frameworks.',
+    technologies: ['Next.js', 'TypeScript', 'React', 'Tailwind CSS', 'JavaScript'],
+    category: 'Portfolio',
+    image: '/project1-miniproject.png',
+    liveUrl: 'https://project1.bernardarikuoko.com.ng',
+    featured: true
+  },
+  
   {
     id: 'unity-nodes-mnt-magic',
     title: 'Unity Nodes - MNT Magic',

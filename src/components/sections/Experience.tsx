@@ -245,20 +245,61 @@ export function Experience() {
         </div>
 
         {/* Call to Action */}
-        <div className="mt-16 text-center">
-          <div className="bg-gradient-to-r from-blue-600 to-royal-600 rounded-2xl p-8 shadow-xl">
-            <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">
-              Let&apos;s Work Together
-            </h3>
-            <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
-              Experienced in building scalable SaaS enterprise solutions. Available for consulting and collaboration opportunities.
-            </p>
-            <a
-              href="#contact"
-              className="inline-block px-8 py-4 bg-white text-blue-600 font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
-            >
-              Get In Touch
-            </a>
+        <div className="mt-16 text-center relative">
+          <div className="relative rounded-2xl p-8 sm:p-12 shadow-2xl overflow-hidden">
+            {/* Animated Background Gradient */}
+            <div className="absolute inset-0 animate-gradient-xy"></div>
+            
+            {/* Animated Blob Shapes */}
+            <div className="absolute top-0 right-0 w-72 h-72 bg-gold-400/30 rounded-full blur-3xl animate-pulse"></div>
+            <div className="absolute bottom-0 left-0 w-96 h-96 bg-royal-400/30 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-blue-400/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+            
+            {/* Floating Bubbles with Pop Effect */}
+            <div className="absolute top-1/4 left-1/4 w-16 h-16 bg-white/20 rounded-full animate-bubble-pop" style={{ animationDelay: '0s', animationDuration: '12s' }}></div>
+            <div className="absolute top-1/3 right-1/4 w-12 h-12 bg-white/15 rounded-full animate-bubble-pop" style={{ animationDelay: '1s', animationDuration: '14s' }}></div>
+            <div className="absolute bottom-1/4 left-1/3 w-20 h-20 bg-white/25 rounded-full animate-bubble-pop" style={{ animationDelay: '2s', animationDuration: '13s' }}></div>
+            <div className="absolute top-1/2 right-1/3 w-14 h-14 bg-white/18 rounded-full animate-bubble-pop" style={{ animationDelay: '0.5s', animationDuration: '15s' }}></div>
+            <div className="absolute bottom-1/3 right-1/5 w-18 h-18 bg-white/22 rounded-full animate-bubble-pop" style={{ animationDelay: '1.5s', animationDuration: '11s' }}></div>
+            <div className="absolute top-2/3 left-1/5 w-10 h-10 bg-white/15 rounded-full animate-bubble-pop" style={{ animationDelay: '2.5s', animationDuration: '13.5s' }}></div>
+            <div className="absolute top-1/5 right-1/2 w-22 h-22 bg-white/20 rounded-full animate-bubble-pop" style={{ animationDelay: '0.8s', animationDuration: '14.5s' }}></div>
+            <div className="absolute bottom-1/5 left-2/3 w-13 h-13 bg-white/18 rounded-full animate-bubble-pop" style={{ animationDelay: '1.8s', animationDuration: '12.2s' }}></div>
+            <div className="absolute top-3/4 left-1/2 w-11 h-11 bg-white/16 rounded-full animate-bubble-pop" style={{ animationDelay: '3s', animationDuration: '12.8s' }}></div>
+            <div className="absolute top-1/6 right-1/6 w-15 h-15 bg-white/19 rounded-full animate-bubble-pop" style={{ animationDelay: '0.3s', animationDuration: '13.3s' }}></div>
+            <div className="absolute bottom-1/6 left-1/6 w-17 h-17 bg-white/21 rounded-full animate-bubble-pop" style={{ animationDelay: '1.2s', animationDuration: '14.2s' }}></div>
+            <div className="absolute top-5/6 right-2/3 w-9 h-9 bg-white/14 rounded-full animate-bubble-pop" style={{ animationDelay: '2.2s', animationDuration: '11.5s' }}></div>
+            <div className="absolute top-2/5 left-3/4 w-19 h-19 bg-white/23 rounded-full animate-bubble-pop" style={{ animationDelay: '0.7s', animationDuration: '13.7s' }}></div>
+            <div className="absolute bottom-2/5 right-1/6 w-16 h-16 bg-white/17 rounded-full animate-bubble-pop" style={{ animationDelay: '1.7s', animationDuration: '12.7s' }}></div>
+            <div className="absolute top-4/5 left-1/6 w-12 h-12 bg-white/15 rounded-full animate-bubble-pop" style={{ animationDelay: '2.7s', animationDuration: '14.7s' }}></div>
+            <div className="absolute top-1/3 left-1/2 w-21 h-21 bg-white/24 rounded-full animate-bubble-pop" style={{ animationDelay: '0.4s', animationDuration: '11.8s' }}></div>
+            <div className="absolute bottom-3/4 right-1/4 w-14 h-14 bg-white/18 rounded-full animate-bubble-pop" style={{ animationDelay: '1.4s', animationDuration: '13.4s' }}></div>
+            <div className="absolute top-1/2 left-1/6 w-8 h-8 bg-white/13 rounded-full animate-bubble-pop" style={{ animationDelay: '2.4s', animationDuration: '12.4s' }}></div>
+            <div className="absolute bottom-1/2 right-1/2 w-23 h-23 bg-white/22 rounded-full animate-bubble-pop" style={{ animationDelay: '0.6s', animationDuration: '14.6s' }}></div>
+            <div className="absolute top-3/5 left-4/5 w-11 h-11 bg-white/16 rounded-full animate-bubble-pop" style={{ animationDelay: '1.6s', animationDuration: '11.6s' }}></div>
+            
+            {/* Geometric Pattern Overlay */}
+            <div className="absolute inset-0 opacity-10">
+              <div className="absolute top-4 left-4 w-20 h-20 border-2 border-white rounded-lg rotate-45"></div>
+              <div className="absolute top-12 right-8 w-16 h-16 border-2 border-white rounded-full"></div>
+              <div className="absolute bottom-8 left-12 w-24 h-24 border-2 border-white rounded-lg"></div>
+              <div className="absolute bottom-4 right-4 w-12 h-12 border-2 border-white rounded-full"></div>
+            </div>
+            
+            {/* Content */}
+            <div className="relative z-10">
+              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4 drop-shadow-lg">
+                Let&apos;s Work Together
+              </h3>
+              <p className="text-white/90 mb-8 max-w-2xl mx-auto text-lg leading-relaxed drop-shadow-md">
+                Experienced in building scalable SaaS enterprise solutions. Available for consulting and collaboration opportunities.
+              </p>
+              <a
+                href="#contact"
+                className="inline-block px-8 py-4 bg-white text-royal-600 font-semibold rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-1 hover:scale-105 transition-all duration-300"
+              >
+                Get In Touch
+              </a>
+            </div>
           </div>
         </div>
       </div>
